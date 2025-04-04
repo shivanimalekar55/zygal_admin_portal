@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;  // Import this to avoid the error
 
 import Config.ConfigReader;
 
@@ -59,7 +60,7 @@ public class loginPage {
 		signup.click();
 	}
 
-	public String getErrorText() {
+	/*public String getErrorText() {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 			wait.until(ExpectedConditions.visibilityOf(getError));
@@ -69,6 +70,26 @@ public class loginPage {
 		} catch (Exception e) {
 			return "No error message displayed";
 		}
-	}
+	
+	} */
 
-}
+	// UPDATED getErrorText() METHOD WITH TOASTER MESSAGE REPORTING
+    public String getErrorText() {
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+            wait.until(ExpectedConditions.visibilityOf(getError));
+
+            String errorMessage = getError.getText();
+            Reporter.log("Test Failed: Toaster Message Displayed - " + errorMessage, true);
+            return errorMessage;
+        } catch (Exception e) {
+            Reporter.log("No error message displayed", true);
+            return "No error message displayed";
+        }
+    }
+	
+	public boolean isLoginSuccessful() {
+		// TODO Auto-generated method stub
+		return false;
+	}}
+	

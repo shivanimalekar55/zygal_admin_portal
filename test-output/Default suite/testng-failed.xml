@@ -6,7 +6,10 @@
       <class name="Test.loginPageTest">
         <methods>
           <include name="browserLaunch"/>
-          <include name="loginWithValidCredentialsTest"/>
+          <include name="testInvalidLogin"/>
+          <include name="loginWithValidUserEmailAndInvalidPasswordTest"/>
+          <include name="loginWithInvalidUserEmailAndvalidPasswordTest"/>
+          <include name="loginWithInvalidCredentialsTest"/>
         </methods>
       </class> <!-- Test.loginPageTest -->
     </classes>

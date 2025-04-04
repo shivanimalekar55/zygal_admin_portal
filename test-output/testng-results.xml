@@ -1,20 +1,217 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="2" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T18:34:22 IST" name="Default suite" finished-at="2025-03-25T18:34:28 IST" duration-ms="6539">
+  <suite started-at="2025-04-02T19:24:30 IST" name="Default suite" finished-at="2025-04-02T19:25:12 IST" duration-ms="41823">
     <groups>
     </groups>
-    <test started-at="2025-03-25T18:34:22 IST" name="Default test" finished-at="2025-03-25T18:34:28 IST" duration-ms="6539">
+    <test started-at="2025-04-02T19:24:30 IST" name="Default test" finished-at="2025-04-02T19:25:12 IST" duration-ms="41823">
       <class name="Test.loginPageTest">
-        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@77f1baf5]" started-at="2025-03-25T18:34:22 IST" name="browserLaunch" finished-at="2025-03-25T18:34:25 IST" duration-ms="2993" status="PASS">
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:30 IST" name="browserLaunch" finished-at="2025-04-02T19:24:34 IST" duration-ms="3127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserLaunch -->
-        <test-method signature="loginWithValidCredentialsTest()[pri:0, instance:Test.loginPageTest@77f1baf5]" started-at="2025-03-25T18:34:25 IST" name="loginWithValidCredentialsTest" description="User Login with Valid Credentials" finished-at="2025-03-25T18:34:28 IST" duration-ms="3505" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:34 IST" name="testInvalidLogin" finished-at="2025-04-02T19:24:34 IST" duration-ms="37" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "POM.loginPage.enteruserId(String)" because "login" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "POM.loginPage.enteruserId(String)" because "login" is null
+at Test.loginPageTest.testInvalidLogin(loginPageTest.java:142)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:34 IST" name="browserLaunch" finished-at="2025-04-02T19:24:44 IST" duration-ms="10180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="loginWithValidCredentialsTest()[pri:1, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:44 IST" name="loginWithValidCredentialsTest" description="User Login with Valid Credentials" finished-at="2025-04-02T19:24:48 IST" duration-ms="4142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithValidCredentialsTest -->
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:48 IST" name="browserLaunch" finished-at="2025-04-02T19:24:51 IST" duration-ms="2752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="loginWithInvalidCredentialsTest()[pri:2, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:51 IST" name="loginWithInvalidCredentialsTest" description="User Login with Invalid Credentials" finished-at="2025-04-02T19:24:52 IST" duration-ms="1059" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Cannot get a STRING value from a NUMERIC cell]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Cannot get a STRING value from a NUMERIC cell
+at org.apache.poi.xssf.usermodel.XSSFCell.typeMismatch(XSSFCell.java:987)
+at org.apache.poi.xssf.usermodel.XSSFCell.getRichStringCellValue(XSSFCell.java:336)
+at org.apache.poi.xssf.usermodel.XSSFCell.getStringCellValue(XSSFCell.java:280)
+at Utility.parameterization.getData(parameterization.java:15)
+at Test.loginPageTest.loginWithInvalidCredentialsTest(loginPageTest.java:54)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentialsTest -->
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:52 IST" name="browserLaunch" finished-at="2025-04-02T19:24:56 IST" duration-ms="4336" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="loginWithEmptyCredentialsTest()[pri:3, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:56 IST" name="loginWithEmptyCredentialsTest" description="User Login with Empty Credentials" finished-at="2025-04-02T19:24:58 IST" duration-ms="1568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithEmptyCredentialsTest -->
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:24:58 IST" name="browserLaunch" finished-at="2025-04-02T19:25:04 IST" duration-ms="6540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="loginWithInvalidUserEmailAndvalidPasswordTest()[pri:4, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:25:04 IST" name="loginWithInvalidUserEmailAndvalidPasswordTest" description="User Login with InValid User Email ID &amp; valid Password" finished-at="2025-04-02T19:25:05 IST" duration-ms="1081" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because the return value of "org.apache.poi.ss.usermodel.Sheet.getRow(int)" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.ss.usermodel.Row.getCell(int)" because the return value of "org.apache.poi.ss.usermodel.Sheet.getRow(int)" is null
+at Utility.parameterization.getData(parameterization.java:15)
+at Test.loginPageTest.loginWithInvalidUserEmailAndvalidPasswordTest(loginPageTest.java:125)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidUserEmailAndvalidPasswordTest -->
+        <test-method is-config="true" signature="browserLaunch()[pri:0, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:25:05 IST" name="browserLaunch" finished-at="2025-04-02T19:25:11 IST" duration-ms="5864" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserLaunch -->
+        <test-method signature="loginWithValidUserEmailAndInvalidPasswordTest()[pri:4, instance:Test.loginPageTest@5149d738]" started-at="2025-04-02T19:25:11 IST" name="loginWithValidUserEmailAndInvalidPasswordTest" description="User Login with Valid User Email ID &amp; Invalid Password" finished-at="2025-04-02T19:25:12 IST" duration-ms="1047" status="FAIL">
+          <exception class="java.lang.ArrayIndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index 1 out of bounds for length 1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+at Test.loginPageTest.loginWithValidUserEmailAndInvalidPasswordTest(loginPageTest.java:106)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayIndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithValidUserEmailAndInvalidPasswordTest -->
       </class> <!-- Test.loginPageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

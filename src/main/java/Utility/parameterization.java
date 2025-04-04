@@ -10,7 +10,7 @@ public class parameterization {
 
 	public static String getData(String sheetname, int row, int cell) throws EncryptedDocumentException, IOException {
 
-		FileInputStream file = new FileInputStream("E:\\zygalAutomation\\zygal_admin_portal\\src\\test\\resources\\data.xlsx");
+		FileInputStream file = new FileInputStream("D:\\Zygal Automation\\zygal_admin_portal\\src\\test\\resources\\data.xlsx");
 
 		String value = WorkbookFactory.create(file).getSheet(sheetname).getRow(row).getCell(cell).getStringCellValue();
 
